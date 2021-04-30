@@ -42,6 +42,6 @@ for i in range(len(xp)):
 # plot the data with our calculated function
 fig = plt.figure(figsize=(7,7))
 ax = fig.add_subplot()
-ax.scatter(x,y)
-ax.plot(xp,yp)
+ax.scatter(x,y,c='mediumseagreen')
+ax.plot(xp,yp,c='mediumblue')
 plt.show()

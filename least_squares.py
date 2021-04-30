@@ -33,7 +33,7 @@ def LSM(x,y):
 # plotting data and prediction line
 fig = plt.figure(figsize=(7,7))
 ax = fig.add_subplot()
-ax.scatter(x,y)
+ax.scatter(x,y,c='mediumseagreen')
 b0,b1 = LSM(x,y)
-ax.plot([min(x),max(x)],[b1*min(x)+b0,b1*max(x)+b0])
+ax.plot([min(x),max(x)],[b1*min(x)+b0,b1*max(x)+b0],c='mediumblue')
 plt.show()
