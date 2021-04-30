@@ -96,6 +96,12 @@ def Logistic(X,Y,learning_rate,num_iterations):
     return coeff
 
 def data(lower_b, upper_b,step,percent=0.5, noise=.6):
+    """lower_b - lower boundary of X (features)
+    upper_b - upper boundary of X (features)
+    step - distance between every X
+    percent - ration 1(ones) to 0(zeros) / labels in .0
+    noise - data noise (from 0 to 1) in .0
+    """
     # Create the data
     X = np.arange(lower_b,upper_b,step)
     Y = np.zeros(len(X))
